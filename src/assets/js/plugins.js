@@ -1,20 +1,22 @@
-const testimonialSwiper = document.querySelector(".testimonial-swiper");
-if (testimonialSwiper) {
-  var swiper = new Swiper(testimonialSwiper, {
-    effect: "fade",
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+function testimonialFunction() {
+  const testimonialSwiper = document.querySelector(".testimonial-swiper");
+  if (testimonialSwiper) {
+    var swiper = new Swiper(testimonialSwiper, {
+      effect: "fade",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
 }
 
 //h3 client slider
