@@ -8,7 +8,7 @@ import { PolicyPrivacyComponent } from './components/policy-privacy/policy-priva
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 
-var titleName: string = 'FGS - ';
+var titleName: string = 'Mina El Trio S.A.S - ';
 
 export const routes: Routes = [
   {
