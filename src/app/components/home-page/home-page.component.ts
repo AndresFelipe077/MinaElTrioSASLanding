@@ -4,8 +4,6 @@ import { HomeImagePageComponent } from '../home-image-page/home-image-page.compo
 import { HeroComponent } from '../hero/hero.component';
 import { ContainerListInfoComponent } from '../container-list-info/container-list-info.component';
 import { ImageTextInfoComponent } from '../image-text-info/image-text-info.component';
-import { ThemeColorNumberService } from '../../services/theme-color-number.service';
-import { ToastService } from '../../services/toast.service';
 import { FunFactComponent } from '../fun-fact/fun-fact.component';
 import { ServiceComponent } from '../service/service.component';
 import { WorkingProcessComponent } from '../working-process/working-process.component';
@@ -34,15 +32,11 @@ import { ConsultationComponent } from '../consultation/consultation.component';
 })
 export class HomePageComponent implements OnInit{
 
-  dark: string = '';
 
   constructor(
-    private themeColorNumber: ThemeColorNumberService,
-    private toast: ToastService,
   ){}
 
   ngOnInit(): void {
-    this.dark = this.themeColorNumber.colorDark();
   }
 
 }
