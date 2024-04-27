@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-none {
+  user-select: none;
+}
+
+/*Scroll-bar*/
+::-webkit-scrollbar{
+  width:.7em;
+  background:grey;
+}
+
+::-webkit-scrollbar-track{
+  background: #334d50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #a1a09b, #a1a09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #a1a09b, #a1a09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius:3em;
+}
+::-webkit-scrollbar-thumb{
+  background-size: contain; 
+  background-repeat:no-repeat;
+  background: #334d50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #7a7974, #7a7974);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #7a7974, #7a7974); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius:1em;
+}

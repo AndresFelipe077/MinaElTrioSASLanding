@@ -1,0 +1,83 @@
+<div [ngClass]="dark + ' md:flex'">
+  <div
+    class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+    <div>
+      <h1 class="text-white font-bold text-4xl font-sans">Felpil Games Studio</h1>
+      <p class="text-white mt-1">La magia de creer nunca para.</p>
+    </div>
+    <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+    <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+    <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+    <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+  </div>
+  <div [ngClass]="dark + 'flex md:w-1/2 justify-center py-10 items-center bg-white'">
+    <form [ngClass]="dark + 'bg-white w-9/12'" [formGroup]="registerForm">
+      <notification></notification>
+      <h1 class="mx-auto w-auto text-center text-gray-800 font-bold text-2xl mb-1 dark:text-gray-400">Registrate</h1>
+      <img class="mx-auto h-10 w-auto m-5" src="assets/img_felpil_circle.png" alt="Felpil Games Studio">
+      <div class="mx-auto w-auto">
+        <p class="text-center text-sm font-normal text-gray-600 mb-7">Bienvenido a la magia del software!!!</p>
+      </div>
+
+      <div class="mb-5">
+        <label for="userName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre de
+          usuario</label>
+        <input type="text" id="userName" formControlName="userName"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="felpilgamesstudio07" autocomplete="userName" required>
+      </div>
+
+      <div class="mb-5">
+        <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Primer
+          nombre</label>
+        <input type="text" id="firstName" formControlName="firstName"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="felpil" autocomplete="firstName" required>
+      </div>
+
+      <div class="mb-5">
+        <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Apellido</label>
+        <input type="text" id="lastName" formControlName="lastName"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="games studio" autocomplete="lastName" required>
+      </div>
+
+      <div class="mb-5">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo
+          electrónico</label>
+        <input type="email" id="email" formControlName="email"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="name@felpilgamesstudio.com" autocomplete="email" required>
+      </div>
+
+      <div class="mb-5">
+        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+        <input type="password" id="password" autocomplete="new-password"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="********" formControlName="password" required>
+      </div>
+
+      <div class="mb-5">
+        <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirmar
+          contraseña</label>
+        <input type="password" id="repeat-password" autocomplete="new-password"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="********" formControlName="confirmPassword" required>
+      </div>
+
+      <div class="flex items-start mb-5">
+        <div class="flex items-center h-5">
+          <input id="terms" type="checkbox" value=""
+            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+            required>
+        </div>
+        <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Estoy de acuerdo con <a
+          [routerLink]="['/terminos-y-condiciones']" class="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</a>
+        </label>
+      </div>
+      
+      <button type="button" (click)="register()"
+        class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Registrarse</button>
+    </form>
+  </div>
+</div>
