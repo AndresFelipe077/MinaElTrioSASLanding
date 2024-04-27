@@ -10,9 +10,7 @@ import { WorkingProcessComponent } from '../working-process/working-process.comp
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { BlogComponent } from '../blog/blog.component';
 import { ConsultationComponent } from '../consultation/consultation.component';
-import { HttpClient } from '@angular/common/http';
 
-declare const ScrollSmoother: any;
 @Component({
   selector: 'home-page',
   standalone: true,
@@ -34,32 +32,8 @@ declare const ScrollSmoother: any;
 })
 export class HomePageComponent implements OnInit {
 
+  constructor( ) { }
 
-  constructor(
-    private http: HttpClient,
-  ) { }
-
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.loadAndExecuteScript('./assets/js/ScrollTrigger.min.js');
-      this.loadAndExecuteScript('./assets/js/ScrollSmoother.min.js');
-    }, 50);
-  }
-
-  loadAndExecuteScript(scriptUrl: string): void {
-    this.http.get(scriptUrl, { responseType: 'text' }).subscribe({
-      next: (scriptContent: string) => {
-        try {
-          // Ejecuta el contenido del script
-          eval(scriptContent);
-        } catch (error) {
-          console.error('Error al ejecutar el script:', error);
-        }
-      },
-      error: (error: any) => {
-        console.error('Error al cargar el script:', error);
-      }
-    });
-  }
+  ngOnInit(): void { }
 
 }
