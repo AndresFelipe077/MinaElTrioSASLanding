@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
+declare function showToggleMenuMobile(): void;
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+
+  constructor() { }
+  
+  ngOnInit(): void {
+    setTimeout(() => {
+      showToggleMenuMobile();
+    }, 50);
+  }
 
 }

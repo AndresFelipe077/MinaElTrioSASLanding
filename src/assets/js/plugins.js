@@ -534,38 +534,75 @@ if (document.getElementById("h5-header")) {
   });
 }
 
-const navBtn = document.querySelectorAll(".toggle_nav_menu");
-if (navBtn) {
-  navBtn.forEach((element) => {
-    element.addEventListener("click", (event) => {
-      document
-        .getElementById("mobile-nav-div")
-        .classList.toggle("active_mobile_nav");
-      document
-        .getElementById("mobile-nav-div-overlay")
-        .classList.toggle("active_mobile_nav");
+// const navBtn = document.querySelectorAll(".toggle_nav_menu");
+// if (navBtn) {
+//   navBtn.forEach((element) => {
+//     element.addEventListener("click", (event) => {
+//       document
+//         .getElementById("mobile-nav-div")
+//         .classList.toggle("active_mobile_nav");
+//       document
+//         .getElementById("mobile-nav-div-overlay")
+//         .classList.toggle("active_mobile_nav");
 
-      event.target.children[0].classList.toggle("hidden");
-      event.target.children[1].classList.toggle("hidden");
-    });
-  });
-  if (document.getElementById("mobile-nav-div-overlay")) {
-    document
-      .getElementById("mobile-nav-div-overlay")
-      .addEventListener("click", () => {
+//       event.target.children[0].classList.toggle("hidden");
+//       event.target.children[1].classList.toggle("hidden");
+//     });
+//   });
+//   if (document.getElementById("mobile-nav-div-overlay")) {
+//     document
+//       .getElementById("mobile-nav-div-overlay")
+//       .addEventListener("click", () => {
+//         document
+//           .getElementById("mobile-nav-div")
+//           .classList.remove("active_mobile_nav");
+//         document
+//           .getElementById("mobile-nav-div-overlay")
+//           .classList.remove("active_mobile_nav");
+//         document
+//           .getElementById("mobile_nav_toggle_menu")
+//           .children[0].classList.remove("hidden");
+//         document
+//           .getElementById("mobile_nav_toggle_menu")
+//           .children[1].classList.add("hidden");
+//       });
+//   }
+// }
+
+function showToggleMenuMobile() {
+  const navBtn = document.querySelectorAll(".toggle_nav_menu");
+  if (navBtn) {
+    navBtn.forEach((element) => {
+      element.addEventListener("click", (event) => {
         document
           .getElementById("mobile-nav-div")
-          .classList.remove("active_mobile_nav");
+          .classList.toggle("active_mobile_nav");
         document
           .getElementById("mobile-nav-div-overlay")
-          .classList.remove("active_mobile_nav");
-        document
-          .getElementById("mobile_nav_toggle_menu")
-          .children[0].classList.remove("hidden");
-        document
-          .getElementById("mobile_nav_toggle_menu")
-          .children[1].classList.add("hidden");
+          .classList.toggle("active_mobile_nav");
+  
+        event.target.children[0].classList.toggle("hidden");
+        event.target.children[1].classList.toggle("hidden");
       });
+    });
+    if (document.getElementById("mobile-nav-div-overlay")) {
+      document
+        .getElementById("mobile-nav-div-overlay")
+        .addEventListener("click", () => {
+          document
+            .getElementById("mobile-nav-div")
+            .classList.remove("active_mobile_nav");
+          document
+            .getElementById("mobile-nav-div-overlay")
+            .classList.remove("active_mobile_nav");
+          document
+            .getElementById("mobile_nav_toggle_menu")
+            .children[0].classList.remove("hidden");
+          document
+            .getElementById("mobile_nav_toggle_menu")
+            .children[1].classList.add("hidden");
+        });
+    }
   }
 }
 
