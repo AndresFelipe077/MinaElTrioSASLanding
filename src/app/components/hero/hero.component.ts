@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+declare function clients(): any;
 @Component({
   selector: 'hero',
   standalone: true,
@@ -15,6 +16,9 @@ export class HeroComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
+    setTimeout(() => {
+      clients();
+    }, 50);
   }
   
 

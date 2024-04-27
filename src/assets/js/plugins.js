@@ -47,34 +47,37 @@ if (document.getElementsByClassName("h3-partner_slider")) {
   });
 }
 
-if (document.getElementsByClassName("h1-partner_slider")) {
-  new Swiper(".h1-partner_slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    // centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: false,
-    navigation: false,
-    breakpoints: {
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+function clients() {
+  if (document.getElementsByClassName("h1-partner_slider")) {
+    new Swiper(".h1-partner_slider", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      // centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 40,
+      pagination: false,
+      navigation: false,
+      breakpoints: {
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 50,
+        },
       },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 50,
-      },
-    },
-  });
+    });
+  }
 }
+
 
 //SEO Agency
 
@@ -580,7 +583,7 @@ function showToggleMenuMobile() {
         document
           .getElementById("mobile-nav-div-overlay")
           .classList.toggle("active_mobile_nav");
-  
+
         event.target.children[0].classList.toggle("hidden");
         event.target.children[1].classList.toggle("hidden");
       });
