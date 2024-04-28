@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-declare function inCrease(grid: HTMLElement): any;
+declare function inCreaseLanding(): any;
 declare function mouseMoveParallax(selectorId: string): void;
 @Component({
   selector: 'home-image-page',
@@ -18,10 +18,7 @@ export class HomeImagePageComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      const grid = document.getElementById("win-grid");
-      if (grid) {
-        inCrease(grid);
-      }
+      inCreaseLanding();
 
       mouseMoveParallax("hero-mouse-move-anim");
       mouseMoveParallax("home-working-cursor-anim");
@@ -30,7 +27,7 @@ export class HomeImagePageComponent implements OnInit {
       mouseMoveParallax("home-one-about-mouse-anim");
       mouseMoveParallax("about-shape-mouse-anim");
       mouseMoveParallax("home-four-cta-mouse-move");
-    }, 50);
+    }, 100);
   }
 
 }
