@@ -57,9 +57,17 @@ export class AppComponent implements OnInit {
   }
 
 
+  /**
+  * Crea una cuadrícula de botones interactivos con efecto de gradiente radial.
+  * @returns void
+  */
   inCreaseLanding(): void {
+    // Obtener el elemento contenedor de la cuadrícula por su ID
     const grid = document.getElementById("win-grid") as HTMLElement | null;
+
+    // Verificar si se encontró el contenedor de la cuadrícula
     if (grid) {
+      // Crear 1000 elementos de botón dentro de la cuadrícula
       for (let i = 0; i < 1000; i++) {
         const newElement = document.createElement("div");
         newElement.classList.add("win-btn");
@@ -67,20 +75,29 @@ export class AppComponent implements OnInit {
         grid.appendChild(newElement);
       }
 
+      // Definir el desplazamiento para los cálculos de posición
       const offset = 49;
+
+      // Definir los ángulos en radianes para el efecto de gradiente
       const angles: number[] = [];
       for (let i = 0; i <= 360; i += 45) {
         angles.push((i * Math.PI) / 180);
       }
+
+      // Arreglo para almacenar los elementos cercanos al puntero del mouse
       let nearBy: HTMLElement[] = [];
 
+      // Función para limpiar los estilos de los elementos cercanos
       function clearNearBy(): void {
         nearBy.forEach((e) => (e.style.borderImage = ''));
         nearBy = [];
       }
 
+      // Agregar eventos y efectos a cada botón en la cuadrícula
       document.querySelectorAll(".win-btn").forEach((element) => {
         const b = element as HTMLDivElement;
+
+        // Manejar el evento mouseleave para restablecer los estilos del botón
         b.onmouseleave = (e) => {
           const target = e.target as HTMLElement | null;
           if (target) {
@@ -89,22 +106,27 @@ export class AppComponent implements OnInit {
           }
         };
 
+        // Manejar el evento mouseenter para limpiar los elementos cercanos
         b.onmouseenter = () => {
           clearNearBy();
         };
 
+        // Agregar el evento mousemove para aplicar el efecto de gradiente radial
         b.addEventListener("mousemove", (e: MouseEvent) => {
           const rect = (e.target as HTMLElement).getBoundingClientRect();
-          const x = e.clientX - rect.left; // x position within the element.
-          const y = e.clientY - rect.top; // y position within the element.
-          // e.target.style.borderImage = `radial-gradient(circle at ${x}px ${y}px , rgba(121, 74, 255,0.25),rgba(121, 74, 255,0) )`;
-          (e.target as HTMLElement).style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px ,rgba(121, 74, 255,0.7),rgba(121, 74, 255,0.4),rgba(121, 74, 255,0),#eaebf0,transparent ) 9 / 2px / 0px stretch `;
+          const x = e.clientX - rect.left; // posición x dentro del elemento.
+          const y = e.clientY - rect.top; // posición y dentro del elemento.
+          (e.target as HTMLElement).style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px,rgba(121, 74, 255,0.7),rgba(121, 74, 255,0.4),rgba(121, 74, 255,0),#eaebf0,transparent ) 9 / 2px / 0px stretch `;
         });
 
       });
 
+      // Obtener el cuerpo de la cuadrícula para manejar el evento mousemove global
       const body = document.querySelector(".win-grid") as HTMLElement | null;
+
+      // Verificar si se encontró el cuerpo de la cuadrícula
       if (body) {
+        // Manejar el evento mousemove global para detectar elementos cercanos al puntero del mouse
         body.addEventListener("mousemove", (e) => {
           const x = e.x;
           const y = e.y;
@@ -127,13 +149,14 @@ export class AppComponent implements OnInit {
             return acc;
           }, []);
         });
-        if (body) {
-          body.onmouseleave = () => {
-            clearNearBy();
-          };
-        }        
+
+        // Manejar el evento mouseleave del cuerpo de la cuadrícula para limpiar los elementos cercanos
+        body.onmouseleave = () => {
+          clearNearBy();
+        };
       }
     }
   }
+
 
 }
