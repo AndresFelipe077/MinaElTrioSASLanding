@@ -422,4 +422,4 @@ function inCreaseLanding() {
     };
   }
 }
-// inCrease(grid);
+inCreaseLanding();
