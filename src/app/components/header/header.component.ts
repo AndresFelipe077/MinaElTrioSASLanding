@@ -10,6 +10,8 @@ declare function showToggleMenuMobile(): void;
 })
 export class HeaderComponent implements OnInit {
 
+  email: string = 'minaeltriosas@gmail.com';
+
   constructor() { }
   
   ngOnInit(): void {
