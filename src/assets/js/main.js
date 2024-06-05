@@ -161,7 +161,7 @@ function typeWriter(
 }
 
 text_list = ["Keyword search...", " "];
-text_list2 = ["Email Address...", " "];
+text_list2 = ["Correo electrónico", " "];
 text_list3 = ["Full Name...", " "];
 text_list4 = ["Your message...", " "];
 text_list5 = ["Search...", ""];
