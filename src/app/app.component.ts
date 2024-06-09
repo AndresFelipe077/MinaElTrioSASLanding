@@ -10,6 +10,7 @@ import { HomeImagePageComponent } from './components/home-image-page/home-image-
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { TermsAndConditionsComponent } from './components/terms-and-conditions/terms-and-conditions.component';
 import { HeaderComponent } from './components/header/header.component';
+import $ from 'jquery';
 
 // declare function inCreaseLanding(): any;
 declare function mouseMoveParallax(selectorId: string): void;
@@ -43,8 +44,19 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    // $(document).ready(function () {
+    //   setTimeout(function () {
+    //     $("#container-preloader").addClass("loaded");
+    //     if ($("#container-preloader").hasClass("loaded")) {
+    //       $("#preloader")
+    //         .delay(1000)
+    //         .queue(function () {
+    //           $(this).remove();
+    //         });
+    //     }
+    //   }, 2000);
+    // });
     setTimeout(() => {
-      this.preLoader();
       this.inCreaseLanding();
 
       mouseMoveParallax("hero-mouse-move-anim");
@@ -55,25 +67,6 @@ export class AppComponent implements OnInit {
       mouseMoveParallax("about-shape-mouse-anim");
       mouseMoveParallax("home-four-cta-mouse-move");
     }, 100);
-  }
-
-  preLoader() {
-    setTimeout(() => {
-      const containerPreloader = document.getElementById('container-preloader');
-      if (containerPreloader) {
-        console.log('of first if');
-
-        containerPreloader.classList.add('loaded');
-
-        // setTimeout(() => {
-          const preloader = document.getElementById('preloader');
-          if (preloader) {
-            console.log('of second if');
-            preloader.remove();
-          }
-        // }, 1000);
-      }
-    }, 2000);
   }
 
   /**

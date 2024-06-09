@@ -11,20 +11,20 @@
       <div class="theme-container mx-auto h-fit w-fit relative z-20">
         <div class="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
           <h1 class="text-main-black text-34 sm:text-48 font-semibold">
-            About Us
+            Sobre nosotros
           </h1>
           <div class="flex gap-5 items-center justify-center mt-4">
-            <a href="#"
+            <a [routerLink]="['/']"
               class="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple">
-              Home
+              Inicio
             </a>
             <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 6L1 11" stroke="#794AFF" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <a href="#"
+            <a [routerLink]="'/sobre-nosotros'"
               class="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple">
-              about us
+              Sobre nosotros
             </a>
           </div>
         </div>
@@ -40,17 +40,17 @@
           <div class="">
             <div class="py-1.5 md:py-3 px-5 rounded-[30px] border-[1.2px] border-blue-seo/30 w-fit bg-blue-seo/10">
               <h1 class="text-base tracking-tight font-medium text-purple leading-5">
-                About Company
+                Sobre nuestra empresa
               </h1>
             </div>
             <h1 class="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-              Digital Transforming Brands, Elevating Reach Crafting
-              Success
+              Profesionales especializados, con una amplia experiencia laboral
             </h1>
             <p class="mt-5 md:mt-10 text-paragraph">
-              Defined by digital dynamism, our digital marketing
-              agency emerges as a beacon of innovation and strategic
-              prowess.
+              Nuestra experiencia y conocimiento, brindamos servicios de auditorías, consultorías, asesorías además de
+              la
+              implementación, administración y ejecución de los sistemas de gestión integral orientados a las buenas
+              prácticas de HSEQ.
             </p>
             <hr class="mt-10 border-purple/10" />
             <div class="w-full grid grid-cols-1 sm:grid-cols-2 mt-[50px] gap-8 md:gap-[70px]">
@@ -64,11 +64,10 @@
                     fill="white" />
                 </svg>
                 <h1 class="text-18 text-main-black font-semibold mt-4">
-                  Expert Team Member
+                  Equipo experimentado
                 </h1>
                 <p class="text-paragraph mt-3">
-                  An SEO Optimization agency is company that
-                  specializes
+                  Cursos y certificaciones en altura, con principios y fundamentos en la Calidad y la Innovación.
                 </p>
               </div>
               <div data-aos="fade-left" data-aos-delay="100" class="grid-cols-1">
@@ -81,11 +80,11 @@
                     fill="white" />
                 </svg>
                 <h1 class="text-18 text-main-black font-semibold mt-4">
-                  Custom SEO Support
+                  Soporte y comercialización
                 </h1>
                 <p class="text-paragraph mt-3">
-                  These agencies typically offer range of services
-                  aimed
+                  Comercialización en equipos y productos de protección personal, para emergencias y de
+                  seguridad para todos los sectores empresariales.
                 </p>
               </div>
             </div>
@@ -95,22 +94,10 @@
         <div class="col-span-6 relative flex flex-col sm:flex-row justify-end items-center">
           <div
             class="flex items-center p-[7px] pl-5 bg-white rounded-[30px] sm:absolute left-10 top-[70px] z-10 shadow-style-one">
-            <span class="font-inter text-sm font-semibold text-black">Trusted Clients</span>
-            <div class="flex relative cursor-pointer">
-              <img src="./assets/images/about/client1.webp" alt=""
-                class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-full overflow-hidden relative -right-4 hover:z-10 transition-all duration-300" /><img
-                src="./assets/images/about/client2.webp" alt=""
-                class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-full overflow-hidden relative -right-3 hover:z-10 transition-all duration-300" /><img
-                src="./assets/images/about/client3.webp" alt=""
-                class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-full overflow-hidden relative -right-2 hover:z-10 transition-all duration-300" /><img
-                src="./assets/images/about/client4.webp" alt=""
-                class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-full overflow-hidden relative -right-1 hover:z-10 transition-all duration-300" /><img
-                src="./assets/images/about/client5.webp" alt=""
-                class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-full relative overflow-hidden hover:z-10 transition-all duration-300" />
-            </div>
+            <span class="font-inter text-sm font-semibold text-black">Ideando, transformando, mejorando</span>
           </div>
-          <div>
-            <img src="./assets/images/about/hero-img.webp" alt="img" class="" />
+          <div class="rounded-[15px]">
+            <img class="rounded-image" src="./assets/images/about/profesionales.jpg" alt="img" class="" />
           </div>
 
           <div
@@ -123,11 +110,11 @@
                   d="M9.28753 7.01343L8.90454 1.36956M8.90454 1.36956L3.26066 1.75255M8.90454 1.36956L1.01321 10.4099"
                   stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <span class="text-sm text-white leading-8">We have</span>
+              <span class="text-sm text-white leading-8">Tenemos</span>
             </div>
             <h1 class="text-[27px] leading-[35px] text-white font-semibold tracking-tight max-w-[170px]"
               data-scroll-qs="scroll" data-count-qs="25" data-type-qs="+ Years of Experience" data-speed-qs="1000">
-              25+ Years of Experience
+              10+ años de experiencia
             </h1>
           </div>
         </div>
@@ -135,6 +122,7 @@
     </div>
   </section>
   <!-- about end  -->
+
   <!-- count section  start  -->
   <section class="w-full pb-16 md:pb-[130px]">
     <div class="theme-container mx-auto">
@@ -220,17 +208,18 @@
     </div>
   </section>
   <!-- count section end  -->
+
   <!-- Our Benefit start  -->
   <section id="benefit" class="bg-main-gray">
     <div class="benefit-section-wrapper w-full py-16 md:py-[130px]">
       <div class="theme-container mx-auto">
         <div class="w-full">
           <div class="flex flex-col items-center">
-            <span
-              class="rounded-[30px] px-5 py-0.5 mb-5 bg-purple/10 font-medium text-purple border border-purple/20">Our
-              Benefit</span>
+            <span class="rounded-[30px] px-5 py-0.5 mb-5 bg-purple/10 font-medium text-purple border border-purple/20">
+              Nuestros beneficios
+            </span>
             <h2 class="text-24 sm:text-48 font-semibold text-main-black mb-[60px] text-center max-w-[653px]">
-              Digital Marketing Agency Can Provide Numerous Benefits
+              Mina El Trio S.A.S puede ofrecer numerosos beneficios
             </h2>
           </div>
         </div>
@@ -260,11 +249,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Expertise Marketing
+                    Medicinada laboral y preventiva
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Gestión en las Evaluaciones Médico Laborales
                   </p>
                 </div>
               </div>
@@ -274,11 +262,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Access tools & resources
+                    Seguridad e higiene personal
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Prevenir, controlar riesgos ocupacionales
                   </p>
                 </div>
               </div>
@@ -288,11 +275,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Cost-effectiveness
+                    Asesorias y asistencias profesionales en HSEQ
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Elaboración de normas y estándares
                   </p>
                 </div>
               </div>
@@ -302,11 +288,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Creativity & innovation
+                    Capacitaciones, cursos y entrenamientos
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Seguridad en el trabajo, seguridad física.
                   </p>
                 </div>
               </div>
@@ -316,11 +301,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Time-saving
+                    Asesorias, consultorias en seguridad en mineria 
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Cumplimiento de requisitos legales
                   </p>
                 </div>
               </div>
@@ -330,11 +314,10 @@
                 class="max-w-full col-span-3 relative before:w-full before:block before:h-full before:border before:border-purple before:rounded-[10px] before:absolute before:left-0 before:top-0 before:z-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-500 before:origin-top-left after:w-full after:block after:h-full after:border after:border-purple after:rounded-[10px] after:absolute after:left-0 after:top-0 after:z-0 after:scale-0 hover:after:scale-100 after:transition-all after:duration-500 before:ease-linear after:ease-linear after:origin-bottom-right">
                 <div class="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                   <h1 class="text-18 font-inter font-semibold text-main-black">
-                    Consistent results
+                    Compromiso, experiencia y conocimientos 
                   </h1>
                   <p class="text-paragraph">
-                    Provide visualizations an reports time saving for
-                    vacation
+                    Soluciones integrales a las organizaciones
                   </p>
                 </div>
               </div>
@@ -346,6 +329,7 @@
     </div>
   </section>
   <!-- Our Benefit end  -->
+
   <!-- team start  -->
   <section class="bg-white pt-16 pb-14 md:pt-[130px] md:pb-[120px] relative">
     <div class="theme-container w-full mx-auto">
@@ -605,6 +589,7 @@
     </div>
   </section>
   <!-- team end  -->
+
   <!-- clients start -->
   <section id="home-one-client">
     <div class="theme-container mx-auto">
@@ -658,299 +643,7 @@
     </div>
   </section>
   <!-- client end  -->
-  <!-- testimonial start  -->
-  <section class="pt-16 md:pt-[130px] pb-40 md:pb-[230px]">
-    <div class="theme-container mx-auto">
-      <div class="w-full">
-        <div class="flex flex-col items-center">
-          <span class="rounded-[30px] px-5 py-0.5 mb-5 bg-purple/10 font-medium text-purple border border-purple/20">
-            Clients Feedback
-          </span>
-          <h2 class="text-24 sm:text-48 font-semibold text-main-black mb-[60px] text-center max-w-[653px]">
-            Our Customer Feedback
-          </h2>
-        </div>
-      </div>
-      <div class="flex flex-col items-center justify-center relative lg:px-[138px]">
-        <div class="swiper overflow-hidden h3-testimonial-slider w-full h-full">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide flex flex-col justify-between">
-              <div>
-                <div class="flex flex-col items-center gap-[30px]">
-                  <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M49.5406 4.06287C47.1408 1.36698 44.2282 0 40.8838 0C37.8781 0 35.33 1.07033 33.3098 3.18112C31.3024 5.27842 30.2845 7.88345 30.2845 10.924C30.2845 13.7974 31.3127 16.3578 33.3404 18.5344C35.129 20.4545 37.3822 21.6759 40.0496 22.1736C39.5831 25.7101 36.4568 28.9111 30.7387 31.7003L29.709 32.2026L33.9307 39.9964L34.8837 39.5134C46.976 33.3839 53.1072 24.7214 53.1072 13.7664C53.1072 9.98687 51.9073 6.72226 49.5406 4.06287ZM34.8388 37.062L32.7236 33.1576C39.0843 29.8246 42.3069 25.8181 42.3069 21.2372V20.2564L41.3324 20.146C38.7077 19.849 36.6191 18.8322 34.9474 17.0374C33.2877 15.2557 32.4808 13.2562 32.4808 10.924C32.4808 8.43381 33.2711 6.39791 34.8964 4.69953C36.5086 3.01495 38.4672 2.19605 40.8839 2.19605C43.6124 2.19605 45.9074 3.28432 47.9 5.5229C49.9262 7.79943 50.9111 10.4958 50.9111 13.7663C50.9111 18.7872 49.4973 23.3202 46.7091 27.2392C44.0485 30.9785 40.0582 34.2797 34.8388 37.062Z"
-                      fill="#794AFF" />
-                    <path
-                      d="M19.7738 4.0579C17.3473 1.36532 14.4226 0 11.0807 0C8.07213 0 5.53555 1.0723 3.54187 3.18703C1.5653 5.2835 0.563015 7.88657 0.563015 10.924C0.563015 13.7973 1.59113 16.3577 3.61863 18.5344C5.40351 20.4504 7.62964 21.6706 10.2474 22.1706C9.78658 25.7098 6.68627 28.9124 1.01401 31.7021L0 32.2006L4.1166 40L5.07906 39.5144C17.2262 33.3852 23.3853 24.7223 23.3853 13.7663C23.3852 9.98387 22.17 6.71749 19.7738 4.0579ZM5.04711 37.0583L2.98964 33.1599C9.30416 29.8257 12.5037 25.8182 12.5037 21.2371V20.2585L11.5314 20.1463C8.96052 19.8496 6.89766 18.8327 5.22542 17.0373C3.56573 15.2558 2.75906 13.2561 2.75906 10.924C2.75906 8.4306 3.53782 6.39252 5.13964 4.69362C6.72402 3.01308 8.6675 2.19605 11.0807 2.19605C13.8119 2.19605 16.122 3.28588 18.1422 5.52798C20.1925 7.80328 21.1892 10.4981 21.1892 13.7663C21.1892 18.7864 19.7692 23.3188 16.9683 27.2374C14.2963 30.9756 10.2888 34.2763 5.04711 37.0583Z"
-                      fill="#794AFF" />
-                  </svg>
-                  <div class="flex gap-2 sm:gap-4 items-center">
-                    <h1 class="text-18 font-semibold text-paragraph">
-                      Quality Service
-                    </h1>
-                    <div class="flex gap-1 sm:gap-2.5">
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+   
+  <consultation></consultation>
 
-                <h1 class="text-18 sm:text-[35px] sm:leading-[55px] text-center text-main-black font-medium pt-5">
-                  In this ever-evolving digital era understand the
-                  significance of staying ahead through our blog
-                  invite explore the dynamic world of IT with us
-                  decoding algorithms to unraveling
-                </h1>
-                <div class="flex justify-center gap-5 items-center mt-10">
-                  <div class="flex min-w-12 w-12 sm:w-[60px] min-h-12 h-12 sm:h-[60px] rounded-full overflow-hidden">
-                    <img class="w-full object-cover" src="./assets/images/about/testimonial-1.webp" alt="" />
-                  </div>
-                  <div>
-                    <h1 class="text-20 font-semibold text-main-black">
-                      Matthew C. Lansberry,
-                    </h1>
-                    <p class="text-sm font-medium text-paragraph">
-                      CEO & Founder
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide flex flex-col justify-between">
-              <div>
-                <div class="flex flex-col items-center gap-[30px]">
-                  <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M49.5406 4.06287C47.1408 1.36698 44.2282 0 40.8838 0C37.8781 0 35.33 1.07033 33.3098 3.18112C31.3024 5.27842 30.2845 7.88345 30.2845 10.924C30.2845 13.7974 31.3127 16.3578 33.3404 18.5344C35.129 20.4545 37.3822 21.6759 40.0496 22.1736C39.5831 25.7101 36.4568 28.9111 30.7387 31.7003L29.709 32.2026L33.9307 39.9964L34.8837 39.5134C46.976 33.3839 53.1072 24.7214 53.1072 13.7664C53.1072 9.98687 51.9073 6.72226 49.5406 4.06287ZM34.8388 37.062L32.7236 33.1576C39.0843 29.8246 42.3069 25.8181 42.3069 21.2372V20.2564L41.3324 20.146C38.7077 19.849 36.6191 18.8322 34.9474 17.0374C33.2877 15.2557 32.4808 13.2562 32.4808 10.924C32.4808 8.43381 33.2711 6.39791 34.8964 4.69953C36.5086 3.01495 38.4672 2.19605 40.8839 2.19605C43.6124 2.19605 45.9074 3.28432 47.9 5.5229C49.9262 7.79943 50.9111 10.4958 50.9111 13.7663C50.9111 18.7872 49.4973 23.3202 46.7091 27.2392C44.0485 30.9785 40.0582 34.2797 34.8388 37.062Z"
-                      fill="#794AFF" />
-                    <path
-                      d="M19.7738 4.0579C17.3473 1.36532 14.4226 0 11.0807 0C8.07213 0 5.53555 1.0723 3.54187 3.18703C1.5653 5.2835 0.563015 7.88657 0.563015 10.924C0.563015 13.7973 1.59113 16.3577 3.61863 18.5344C5.40351 20.4504 7.62964 21.6706 10.2474 22.1706C9.78658 25.7098 6.68627 28.9124 1.01401 31.7021L0 32.2006L4.1166 40L5.07906 39.5144C17.2262 33.3852 23.3853 24.7223 23.3853 13.7663C23.3852 9.98387 22.17 6.71749 19.7738 4.0579ZM5.04711 37.0583L2.98964 33.1599C9.30416 29.8257 12.5037 25.8182 12.5037 21.2371V20.2585L11.5314 20.1463C8.96052 19.8496 6.89766 18.8327 5.22542 17.0373C3.56573 15.2558 2.75906 13.2561 2.75906 10.924C2.75906 8.4306 3.53782 6.39252 5.13964 4.69362C6.72402 3.01308 8.6675 2.19605 11.0807 2.19605C13.8119 2.19605 16.122 3.28588 18.1422 5.52798C20.1925 7.80328 21.1892 10.4981 21.1892 13.7663C21.1892 18.7864 19.7692 23.3188 16.9683 27.2374C14.2963 30.9756 10.2888 34.2763 5.04711 37.0583Z"
-                      fill="#794AFF" />
-                  </svg>
-                  <div class="flex gap-2 sm:gap-4 items-center">
-                    <h1 class="text-18 font-semibold text-paragraph">
-                      Quality Service
-                    </h1>
-                    <div class="flex gap-1 sm:gap-2.5">
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <h1 class="text-18 sm:text-[35px] sm:leading-[55px] text-center text-main-black font-medium pt-5">
-                  In this ever-evolving digital era understand the
-                  significance of staying ahead through our blog
-                  invite explore the dynamic world of IT with us
-                  decoding algorithms to unraveling
-                </h1>
-                <div class="flex justify-center gap-5 items-center mt-10">
-                  <div class="flex min-w-12 w-12 sm:w-[60px] min-h-12 h-12 sm:h-[60px] rounded-full overflow-hidden">
-                    <img class="w-full object-cover" src="./assets/images/about/testimonial-1.webp" alt="" />
-                  </div>
-                  <div>
-                    <h1 class="text-20 font-semibold text-main-black">
-                      Matthew C. Lansberry,
-                    </h1>
-                    <p class="text-sm font-medium text-paragraph">
-                      CEO & Founder
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide flex flex-col justify-between">
-              <div>
-                <div class="flex flex-col items-center gap-[30px]">
-                  <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M49.5406 4.06287C47.1408 1.36698 44.2282 0 40.8838 0C37.8781 0 35.33 1.07033 33.3098 3.18112C31.3024 5.27842 30.2845 7.88345 30.2845 10.924C30.2845 13.7974 31.3127 16.3578 33.3404 18.5344C35.129 20.4545 37.3822 21.6759 40.0496 22.1736C39.5831 25.7101 36.4568 28.9111 30.7387 31.7003L29.709 32.2026L33.9307 39.9964L34.8837 39.5134C46.976 33.3839 53.1072 24.7214 53.1072 13.7664C53.1072 9.98687 51.9073 6.72226 49.5406 4.06287ZM34.8388 37.062L32.7236 33.1576C39.0843 29.8246 42.3069 25.8181 42.3069 21.2372V20.2564L41.3324 20.146C38.7077 19.849 36.6191 18.8322 34.9474 17.0374C33.2877 15.2557 32.4808 13.2562 32.4808 10.924C32.4808 8.43381 33.2711 6.39791 34.8964 4.69953C36.5086 3.01495 38.4672 2.19605 40.8839 2.19605C43.6124 2.19605 45.9074 3.28432 47.9 5.5229C49.9262 7.79943 50.9111 10.4958 50.9111 13.7663C50.9111 18.7872 49.4973 23.3202 46.7091 27.2392C44.0485 30.9785 40.0582 34.2797 34.8388 37.062Z"
-                      fill="#794AFF" />
-                    <path
-                      d="M19.7738 4.0579C17.3473 1.36532 14.4226 0 11.0807 0C8.07213 0 5.53555 1.0723 3.54187 3.18703C1.5653 5.2835 0.563015 7.88657 0.563015 10.924C0.563015 13.7973 1.59113 16.3577 3.61863 18.5344C5.40351 20.4504 7.62964 21.6706 10.2474 22.1706C9.78658 25.7098 6.68627 28.9124 1.01401 31.7021L0 32.2006L4.1166 40L5.07906 39.5144C17.2262 33.3852 23.3853 24.7223 23.3853 13.7663C23.3852 9.98387 22.17 6.71749 19.7738 4.0579ZM5.04711 37.0583L2.98964 33.1599C9.30416 29.8257 12.5037 25.8182 12.5037 21.2371V20.2585L11.5314 20.1463C8.96052 19.8496 6.89766 18.8327 5.22542 17.0373C3.56573 15.2558 2.75906 13.2561 2.75906 10.924C2.75906 8.4306 3.53782 6.39252 5.13964 4.69362C6.72402 3.01308 8.6675 2.19605 11.0807 2.19605C13.8119 2.19605 16.122 3.28588 18.1422 5.52798C20.1925 7.80328 21.1892 10.4981 21.1892 13.7663C21.1892 18.7864 19.7692 23.3188 16.9683 27.2374C14.2963 30.9756 10.2888 34.2763 5.04711 37.0583Z"
-                      fill="#794AFF" />
-                  </svg>
-                  <div class="flex gap-2 sm:gap-4 items-center">
-                    <h1 class="text-18 font-semibold text-paragraph">
-                      Quality Service
-                    </h1>
-                    <div class="flex gap-1 sm:gap-2.5">
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.02461 0.953559C6.62812 -0.317851 8.37187 -0.317854 8.97539 0.953557L10.0184 3.15088C10.2581 3.65576 10.7213 4.0057 11.2572 4.08666L13.5895 4.43902C14.939 4.6429 15.4779 6.36716 14.5013 7.35681L12.8137 9.06719C12.4259 9.46019 12.249 10.0264 12.3405 10.5813L12.7389 12.9964C12.9694 14.3938 11.5587 15.4595 10.3517 14.7997L8.26562 13.6595C7.78631 13.3975 7.21369 13.3975 6.73438 13.6595L4.64832 14.7997C3.44129 15.4595 2.03057 14.3938 2.26109 12.9964L2.65949 10.5813C2.75103 10.0264 2.57408 9.46019 2.18631 9.06719L0.498656 7.35681C-0.47785 6.36716 0.0609962 4.6429 1.4105 4.43902L3.74278 4.08666C4.27867 4.0057 4.74192 3.65576 4.98158 3.15088L6.02461 0.953559Z"
-                          fill="#FEC461" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <h1 class="text-18 sm:text-[35px] sm:leading-[55px] text-center text-main-black font-medium pt-5">
-                  In this ever-evolving digital era understand the
-                  significance of staying ahead through our blog
-                  invite explore the dynamic world of IT with us
-                  decoding algorithms to unraveling
-                </h1>
-                <div class="flex justify-center gap-5 items-center mt-10">
-                  <div class="flex min-w-12 w-12 sm:w-[60px] min-h-12 h-12 sm:h-[60px] rounded-full overflow-hidden">
-                    <img class="w-full object-cover" src="./assets/images/about/testimonial-1.webp" alt="" />
-                  </div>
-                  <div>
-                    <h1 class="text-20 font-semibold text-main-black">
-                      Matthew C. Lansberry,
-                    </h1>
-                    <p class="text-sm font-medium text-paragraph">
-                      CEO & Founder
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute w-fit mx-auto flex items-center -bottom-[100px]">
-          <div class="flex justify-between absolute w-full">
-            <button
-              class="group h3-testimonial-prev border border-purple/15 w-[30px] h-[30px] rounded-full flex items-center justify-center bg-purple/10 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-purple before:bg-purple relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
-              <svg class="relative z-10 pointer-events-none" width="12" height="10" viewBox="0 0 12 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="stroke-purple group-hover:stroke-white" d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
-                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            <button
-              class="group rotate-180 h3-testimonial-next border border-purple/15 w-[30px] h-[30px] rounded-full flex items-center justify-center bg-purple/10 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-purple before:bg-purple relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
-              <svg class="relative z-10 pointer-events-none" width="12" height="10" viewBox="0 0 12 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="stroke-purple group-hover:stroke-white" d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
-                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
-          <div class="h3-testimonial-pagination px-10"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- testimonial end  -->
-  <!--Todo: consultation -->
-  <section data-aos="fade-up" id="consultation">
-    <div class="consultation-section-wrapper w-full relative">
-      <div class="theme-container mx-auto relative z-10">
-        <div
-          class="w-full py-[80px] xl:pl-[110px] pl-10 border border-[#e7e3fa] rounded-[20px] bg-main-gray md:flex relative">
-          <div class="absolute bottom-0 left-0 pointer-events-none">
-            <img src="./assets/images/cta-dot-shape.webp" alt="" />
-          </div>
-          <div class="md:w-[432px] w-full">
-            <span class="section-title-top-tag mb-5">Get Consultations</span>
-            <h2 class="md:text-48 text-34 font-semibold text-main-black mb-[32px]">
-              Get your free digital marketing audit
-            </h2>
-            <p class="text-paragraph mb-[45px]">
-              We’ve 25+ years of experience in digital marketing
-            </p>
-
-            <a href="contact.html">
-              <div class="home-two-btn-bg py-3 group bg-purple border-purple inline-flex">
-                <span
-                  class="text-base text-white group-hover:text-purple transition-all duration-300 font-inter relative z-10">
-                  Get Consultation
-                </span>
-                <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path class="group-hover:stroke-blue-seo transition-all duration-300"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </a>
-          </div>
-          <div class="flex-1">
-            <div id="consaltaion-mouse-move-anim" class="flex justify-end w-full relative mt-10">
-              <div class="mr-10 moving-h2-hero-main-img">
-                <img src="./assets/images/cta-shape.webp" alt="" />
-              </div>
-              <div data-depth="0.40" class="layer">
-                <img src="./assets/images/cta-p-1.webp" alt="" />
-              </div>
-              <div data-depth="0.20" class="layer absolute md:right-40 right-10">
-                <img src="./assets/images/cta-p-2.webp" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between absolute top-20">
-        <div id="line-lottie-style-2"></div>
-        <div class="transform rotate-180" id="line-lottie2-style-2"></div>
-      </div>
-    </div>
-  </section>
 </main>

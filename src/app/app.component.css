@@ -1,0 +1,6 @@
+.characters {
+  display: inline-block;
+  font-size: 2rem; /* o el tamaño que desees */
+  font-weight: bold;
+  margin: 0 0.2rem;
+}
