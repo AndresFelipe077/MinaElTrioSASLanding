@@ -44,6 +44,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
+      this.preLoader();
       this.inCreaseLanding();
 
       mouseMoveParallax("hero-mouse-move-anim");
@@ -56,6 +57,24 @@ export class AppComponent implements OnInit {
     }, 100);
   }
 
+  preLoader() {
+    setTimeout(() => {
+      const containerPreloader = document.getElementById('container-preloader');
+      if (containerPreloader) {
+        console.log('of first if');
+
+        containerPreloader.classList.add('loaded');
+
+        // setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          if (preloader) {
+            console.log('of second if');
+            preloader.remove();
+          }
+        // }, 1000);
+      }
+    }, 2000);
+  }
 
   /**
   * Crea una cuadrícula de botones interactivos con efecto de gradiente radial.
@@ -157,6 +176,5 @@ export class AppComponent implements OnInit {
       }
     }
   }
-
 
 }

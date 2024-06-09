@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 declare function showToggleMenuMobile(): void;
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterModule
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
