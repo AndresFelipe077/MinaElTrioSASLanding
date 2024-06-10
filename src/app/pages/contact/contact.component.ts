@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       full_name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', Validators.required],
+      phone: [''],
       message: ['', Validators.required]
     });
   }
@@ -38,13 +38,17 @@ export class ContactComponent implements OnInit {
     
   }
 
+  /**
+   * Create new contact
+   * @returns void
+   */
   onSubmit() {
     
     if (this.contactForm.valid) {
       let contact: ContactModel = {
         full_name: this.contactForm.get('full_name')?.value,
         email: this.contactForm.get('email')?.value,
-        phone: this.contactForm.get('phone')?.value ?? undefined,
+        phone: this.contactForm.get('phone')?.value != "" ? this.contactForm.get('phone')?.value : null,
         message: this.contactForm.get('message')?.value,
       }
 
@@ -62,8 +66,9 @@ export class ContactComponent implements OnInit {
         }
       });
 
+    } else {
+      console.error('Información no valida');
     }
-    console.error('Información no valida');
   }
 
   getErrorMessage(fieldName: string): string {
