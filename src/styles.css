@@ -1,7 +1,48 @@
+@import 'ngx-toastr/toastr';
 @import url('assets/css/aos.css');
 @import url('assets/css/output.css');
 @import url('assets/css/style.css');
 @import url('assets/css/swiper-bundle.min.css');
+
+.toast-success {
+  background-color: #22e722 !important;
+  border-radius: 20px !important;
+  animation: slideInUp .5s ease forwards !important;
+  color: white !important;
+}
+
+.toast-error {
+  background-color: #f45484 !important;
+  border-radius: 20px !important;
+  animation: slideInUp .5s ease forwards !important;
+  color: white !important;
+}
+
+.toast-info {
+  background-color: #53b7f0 !important;
+  border-radius: 20px !important;
+  animation: slideInUp .5s ease forwards !important;
+  color: white !important;
+}
+
+.toast-warning {
+  background-color: #ffcc00 !important;
+  border-radius: 20px !important;
+  animation: slideInUp .5s ease forwards !important;
+  color: white !important;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 
 .select-none {
   user-select: none;

@@ -9,10 +9,12 @@ import { urlLocal, urlProduction } from "./app/graphql.config";
 import { HttpClientModule } from '@angular/common/http';
 import { importProvidersFrom } from "@angular/core";
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr } from 'ngx-toastr';
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideAnimations(),
+    provideToastr({ preventDuplicates: true, positionClass: 'toast-bottom-center' }),
     importProvidersFrom(HttpClientModule),
     provideProtractorTestingSupport(),
     provideRouter(routes),

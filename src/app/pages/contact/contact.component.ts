@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 import { ConsultationComponent } from '../../components/consultation/consultation.component';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ContactModel } from '../../models/contact.model';
+import { ContactService } from '../../services/contact.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -19,12 +21,15 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private contactService: ContactService,
+    private toastr: ToastrService
+  ) {
     this.contactForm = this.formBuilder.group({
       full_name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', Validators.required],
-      subject: ['', Validators.required],
       message: ['', Validators.required]
     });
   }
@@ -34,18 +39,28 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.contactForm.valid);
     
     if (this.contactForm.valid) {
-      // Enviar el formulario
-      console.log(this.contactForm.value);
-
       let contact: ContactModel = {
         full_name: this.contactForm.get('full_name')?.value,
         email: this.contactForm.get('email')?.value,
         phone: this.contactForm.get('phone')?.value ?? undefined,
         message: this.contactForm.get('message')?.value,
       }
+
+      this.contactService.createContact(contact).subscribe({
+        next: (response: ContactModel) => {
+          console.log(response);
+          this.toastr.success('El mensaje se envio exitosamente!!!', 'Mensaje enviado!');
+        },
+        error: (err) => {
+          console.error(err);
+          this.toastr.error('Ups, ocurrio un error inesperado, inténtalo de nuevo o más tarde.', 'Error');
+        },
+        complete: () => {
+          console.log('Proceso de creación de contacto completado');
+        }
+      });
 
     }
     console.error('Información no valida');
