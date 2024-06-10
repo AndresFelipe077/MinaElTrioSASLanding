@@ -59,6 +59,7 @@ export class ContactComponent implements OnInit {
       this.contactService.createContact(contact).subscribe({
         next: (response: ContactModel) => {
           this.toastr.success('El mensaje se envio exitosamente!!!', 'Mensaje enviado!');
+          this.resetContactForm(this.contactForm);
         },
         error: (err) => {
           this.toastr.error('Ups, ocurrio un error inesperado, inténtalo de nuevo o más tarde.', 'Error');
@@ -68,6 +69,14 @@ export class ContactComponent implements OnInit {
     } else {
       this.toastr.error('Verifica por favor los datos a enviar', 'Error');
     }
+  }
+
+  resetContactForm(contactForm: FormGroup): void {
+    contactForm.reset();
+    contactForm.get('full_name')?.setValue('');
+    contactForm.get('email')?.setValue('');
+    contactForm.get('phone')?.setValue('');
+    contactForm.get('message')?.setValue('');
   }
 
 }
