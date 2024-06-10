@@ -11,20 +11,20 @@
       <div class="theme-container mx-auto h-fit w-fit relative z-20">
         <div class="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
           <h1 class="text-main-black text-34 sm:text-48 font-semibold w-full text-center">
-            Contact
+            Contacto
           </h1>
           <div class="flex gap-5 items-center justify-center mt-4">
-            <a href="#"
+            <a [routerLink]="'/'"
               class="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple">
-              Home
+              Inicio
             </a>
             <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 6L1 11" stroke="#794AFF" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <a href="#"
+            <a [routerLink]="'/contacto'"
               class="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple">
-              contact
+              Contacto
             </a>
           </div>
         </div>
@@ -37,11 +37,11 @@
       <!-- address start  -->
       <div class="col-span-7 lg:col-span-5">
         <h1 class="font-semibold text-main-black text-[35px]">
-          Contact Us
+          Contactanos
         </h1>
         <p class="text-paragraph mt-[30px]">
-          We peel back the layers uncertainty, uncovering hidden
-          truths that lie beneath the surface of our reality.
+          Si tienes alguna pregunta o quieres obtener más información, no dudes en comunicarte con nosotros. Estamos
+          aquí para ayudarte.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-[70px] mt-10">
           <div class="col-span-1">
@@ -183,29 +183,27 @@
       <div class="col-span-7">
         <div class="border border-purple/10 bg-main-gray rounded-[10px] p-4 md:p-[50px]">
           <h1 class="text-[30px] tracking-tight font-semibold text-main-black pb-6">
-            Send Us Message
+            Enviar mensaje
           </h1>
           <p class="text-paragraph mb-[30px]">
-            Your email address will not be published. Required fields
-            are marked *
+            Su dirección de correo electrónico no será publicada. Campos requeridos
+            están marcados *
           </p>
-          <form action="" class="grid grid-cols-6 md:grid-cols-12 gap-[30px]">
-            <input type="text" placeholder="Full Name"
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="grid grid-cols-6 md:grid-cols-12 gap-[30px]">
+            <input type="text" formControlName="full_name" placeholder="Nombre completo"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <input type="email" placeholder="Email"
+            <input type="email" formControlName="email" placeholder="Correo electrónico"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <input type="text" placeholder="Phone Number"
-              class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <input type="email" placeholder="Subject"
-              class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <textarea name="" placeholder="Comments"
+            <input type="text" formControlName="phone" placeholder="Número celular"
+              class="col-span-6 md:col-span-12 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
+            <textarea name="" formControlName="message" placeholder="Mensaje"
               class="col-span-6 md:col-span-12 focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent h-[83px]"></textarea>
 
             <div class="col-span-6 md:col-span-12">
-              <button class="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex">
+              <button type="submit" [disabled]="contactForm.invalid" class="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex">
                 <span
                   class="text-base text-white group-hover:text-[#4A7DFF] transition-all duration-300 font-inter relative z-10">
-                  Send Message
+                  Enviar mensaje
                 </span>
                 <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -220,69 +218,19 @@
       </div>
       <!-- contact-form end  -->
     </div>
-    <section class="overflow-hidden mt-10 md:mt-[130px] w-full">
+    <!-- <section class="overflow-hidden mt-10 md:mt-[130px] w-ful m-1">
       <div
         class="max-w-[1780px] relative w-full h-[240px] sm:h-[450px] md:h-[540px] lg:h-[700px] xl:h-[700px] mx-auto xl:rounded-lg overflow-hidden bg-red-300">
         <iframe class="map-iframe" width="1780" height="850" frameborder="0" scrolling="no" marginheight="0"
           marginwidth="0"
-          src="https://www.google.com/maps/d/embed?mid=1hPZlx7IzAPJ3ss2IAz8v2xVInwgYJ6Y&ehbc=2E312F"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.80923483231!2d-76.92421!3d2.52247995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30249b5693d3bb%3A0x1a2fb49d1718ed30!2sLimoncito%2C%20El%20Tambo%2C%20Cauca!5e0!3m2!1ses!2sco!4v1718032037177!5m2!1ses!2sco">
+        </iframe>
       </div>
-    </section>
+    </section> -->
   </section>
   <!-- main container  end  -->
 
   <!--Todo: consultation -->
-  <section data-aos="fade-up" id="consultation">
-    <div class="consultation-section-wrapper w-full relative">
-      <div class="theme-container mx-auto relative z-10">
-        <div
-          class="w-full py-[80px] xl:pl-[110px] pl-10 border border-[#e7e3fa] rounded-[20px] bg-main-gray md:flex relative">
-          <div class="absolute bottom-0 left-0 pointer-events-none">
-            <img src="./assets/images/cta-dot-shape.webp" alt="" />
-          </div>
-          <div class="md:w-[432px] w-full">
-            <span class="section-title-top-tag mb-5">Get Consultations</span>
-            <h2 class="md:text-48 text-34 font-semibold text-main-black mb-[32px]">
-              Get your free digital marketing audit
-            </h2>
-            <p class="text-paragraph mb-[45px]">
-              We’ve 25+ years of experience in digital marketing
-            </p>
+  <consultation></consultation>
 
-            <a href="contact.html">
-              <div class="home-two-btn-bg py-3 group bg-purple border-purple inline-flex">
-                <span
-                  class="text-base text-white group-hover:text-purple transition-all duration-300 font-inter relative z-10">
-                  Get Consultation
-                </span>
-                <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path class="group-hover:stroke-blue-seo transition-all duration-300"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </a>
-          </div>
-          <div class="flex-1">
-            <div id="consaltaion-mouse-move-anim" class="flex justify-end w-full relative mt-10">
-              <div class="mr-10 moving-h2-hero-main-img">
-                <img src="./assets/images/cta-shape.webp" alt="" />
-              </div>
-              <div data-depth="0.40" class="layer">
-                <img src="./assets/images/cta-p-1.webp" alt="" />
-              </div>
-              <div data-depth="0.20" class="layer absolute md:right-40 right-10">
-                <img src="./assets/images/cta-p-2.webp" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between absolute top-20">
-        <div id="line-lottie-style-2"></div>
-        <div class="transform rotate-180" id="line-lottie2-style-2"></div>
-      </div>
-    </div>
-  </section>
 </main>
