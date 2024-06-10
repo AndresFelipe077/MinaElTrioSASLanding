@@ -19,6 +19,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactComponent implements OnInit {
 
+  firstEmail: string = 'uvaeminaeltriosasentrenamiento@gmail.com';
+
+  secondEmail: string = 'gatp.hseqintegral@gmail.com';
+
   contactForm: FormGroup;
 
   constructor(
@@ -54,31 +58,16 @@ export class ContactComponent implements OnInit {
 
       this.contactService.createContact(contact).subscribe({
         next: (response: ContactModel) => {
-          console.log(response);
           this.toastr.success('El mensaje se envio exitosamente!!!', 'Mensaje enviado!');
         },
         error: (err) => {
-          console.error(err);
           this.toastr.error('Ups, ocurrio un error inesperado, inténtalo de nuevo o más tarde.', 'Error');
         },
-        complete: () => {
-          console.log('Proceso de creación de contacto completado');
-        }
       });
 
     } else {
-      console.error('Información no valida');
+      this.toastr.error('Verifica por favor los datos a enviar', 'Error');
     }
   }
-
-  getErrorMessage(fieldName: string): string {
-    const control = this.contactForm.get(fieldName);
-    if (control?.errors?.['required']) {
-      return 'Este campo es obligatorio';
-    } else if (control?.errors?.['email']) {
-      return 'Ingresa un correo electrónico válido';
-    }
-    return '';
-  }  
 
 }

@@ -78,15 +78,16 @@
                   d="M17.4999 27C15.5699 27 13.9999 25.4295 13.9999 23.5C13.9999 23.2235 13.7759 23 13.4999 23C13.224 23 13 23.2235 13 23.5C13 25.4295 11.4299 27 9.49998 27C9.224 27 9 27.2234 9 27.4999C9 27.7764 9.224 27.9999 9.49998 27.9999H17.5C17.7759 27.9999 17.9999 27.7764 17.9999 27.4999C17.9999 27.2234 17.7759 27 17.4999 27ZM12.3254 27C12.8099 26.6084 13.2114 26.1179 13.4999 25.5604C13.7884 26.1179 14.1899 26.6084 14.6744 27H12.3254Z"
                   fill="#794AFF" />
               </svg>
-              <span class="font-inter font-medium text-22 text-main-black">Australia</span>
+              <span class="font-inter font-medium text-22 text-main-black">Colombia</span>
             </h1>
             <p class="max-w-[209px] text-paragraph mt-5">
-              55 Road, 2nd block, 3rd Floor Melbourne, Australia
+              Cauca
             </p>
-            <p class="text-paragraph mt-1">infodrmtechgmail.com</p>
-            <p class="text-paragraph mt-1">(+47)1221 09878</p>
+            <p class="text-paragraph mt-1">{{ firstEmail }}</p>
+            <p class="text-paragraph mt-1">{{ secondEmail }}</p>
+            <p class="text-paragraph mt-1">+57 313 2535609</p>
           </div>
-          <div class="col-span-1">
+          <!-- <div class="col-span-1">
             <h1 class="flex gap-2.5">
               <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -129,10 +130,10 @@
             </p>
             <p class="text-paragraph mt-1">infodrmtechgmail.com</p>
             <p class="text-paragraph mt-1">(+47)1221 09878</p>
-          </div>
+          </div> -->
         </div>
         <hr class="border-purple/10 mt-11 mb-[50px]" />
-        <div class="flex items-center gap-[15px]">
+        <!-- <div class="flex items-center gap-[15px]">
           <h1 class="font-semibold text-18 text-main-black pr-2.5">
             Follow Us
           </h1>
@@ -176,7 +177,7 @@
               </svg>
             </span>
           </a>
-        </div>
+        </div> -->
       </div>
       <!-- address end  -->
       <!-- contact form start -->
@@ -193,13 +194,6 @@
             
             <input type="text" formControlName="full_name" placeholder="Nombre completo *" required="El campo de nombre es requerido"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-
-            <!-- @if(contactForm.get('full_name')?.invalid && (contactForm.get('full_name')?.dirty ||
-            contactForm.get('full_name')?.touched)) {
-            <div class="col-span-6">
-              <small class="text-red-500">{{ getErrorMessage('full_name') }}</small>
-            </div>
-            } -->
 
             <input type="email" formControlName="email" placeholder="Correo electrónico *" required="Campo de correo electrónico requerido"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
