@@ -11,6 +11,14 @@
 npm-debug.log
 yarn-error.log
 
+# Ignorar environment.ts y environment.development.ts
+src/environments/environment.ts
+src/environments/environment.development.ts
+
+# Pero no ignorar los archivos .example
+!src/environments/environment.example.ts
+!src/environments/environment.development.example.ts
+
 # IDEs and editors
 .idea/
 .project

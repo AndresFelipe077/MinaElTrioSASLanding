@@ -190,17 +190,29 @@
             están marcados *
           </p>
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="grid grid-cols-6 md:grid-cols-12 gap-[30px]">
-            <input type="text" formControlName="full_name" placeholder="Nombre completo"
+            
+            <input type="text" formControlName="full_name" placeholder="Nombre completo *" required="El campo de nombre es requerido"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <input type="email" formControlName="email" placeholder="Correo electrónico"
+
+            <!-- @if(contactForm.get('full_name')?.invalid && (contactForm.get('full_name')?.dirty ||
+            contactForm.get('full_name')?.touched)) {
+            <div class="col-span-6">
+              <small class="text-red-500">{{ getErrorMessage('full_name') }}</small>
+            </div>
+            } -->
+
+            <input type="email" formControlName="email" placeholder="Correo electrónico *" required="Campo de correo electrónico requerido"
               class="col-span-6 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
+
             <input type="text" formControlName="phone" placeholder="Número celular"
               class="col-span-6 md:col-span-12 h-[30px] focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent" />
-            <textarea name="" formControlName="message" placeholder="Mensaje"
+
+            <textarea name="" formControlName="message" placeholder="Mensaje *" required="Campo de mensaje requerido"
               class="col-span-6 md:col-span-12 focus:outline-none border-b border-purple/10 focus:border-purple bg-transparent h-[83px]"></textarea>
 
             <div class="col-span-6 md:col-span-12">
-              <button type="submit" [disabled]="contactForm.invalid" class="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex">
+              <button type="submit"
+                class="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex pointer">
                 <span
                   class="text-base text-white group-hover:text-[#4A7DFF] transition-all duration-300 font-inter relative z-10">
                   Enviar mensaje
