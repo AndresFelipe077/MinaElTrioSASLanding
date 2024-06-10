@@ -83,208 +83,211 @@ function clients() {
 
 //SEO Agency
 
-// faq
+function servicesFaqs() {
 
-const h2Faqs = document.querySelectorAll(".h2-faq-toggler");
+  // faq
 
-window.addEventListener("load", (event) => {
-  h2Faqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
+  const h2Faqs = document.querySelectorAll(".h2-faq-toggler");
 
-if (h2Faqs) {
-  h2Faqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      h2Faqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            50 +
-            "px";
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-        }
-      });
+  window.addEventListener("load", (event) => {
+    h2Faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
     });
   });
-}
 
-const h4Faqs = document.querySelectorAll(".h4-faq-toggler");
-window.addEventListener("load", (event) => {
-  h4Faqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (h4Faqs) {
-  h4Faqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      h4Faqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            50 +
-            "px";
-          item.classList.add("single_faq_bg");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("single_faq_bg");
-        }
+  if (h2Faqs) {
+    h2Faqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        h2Faqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              50 +
+              "px";
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+          }
+        });
       });
     });
-  });
-}
+  }
 
-const serviceFaqs = document.querySelectorAll(".service-faq-toggler");
-window.addEventListener("load", (event) => {
-  serviceFaqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (serviceFaqs) {
-  serviceFaqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      serviceFaqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            56 +
-            "px";
-          item.classList.add("bg-purple/5");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("bg-purple/5");
-        }
-      });
+  const h4Faqs = document.querySelectorAll(".h4-faq-toggler");
+  window.addEventListener("load", (event) => {
+    h4Faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
     });
   });
-}
 
-const h6Faqs = document.querySelectorAll(".h6-faq-toggler");
-window.addEventListener("load", (event) => {
-  h6Faqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (h6Faqs) {
-  h6Faqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      h6Faqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            56 +
-            "px";
-          item.classList.add("bg-orange/10");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("bg-orange/10");
-        }
+  if (h4Faqs) {
+    h4Faqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        h4Faqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              50 +
+              "px";
+            item.classList.add("single_faq_bg");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("single_faq_bg");
+          }
+        });
       });
     });
-  });
-}
+  }
 
-const faqs2 = document.querySelectorAll(".faq-toggler-2");
-window.addEventListener("load", (event) => {
-  faqs2.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (faqs2) {
-  faqs2.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      faqs2.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            56 +
-            "px";
-          item.classList.add("bg-purple/5");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("bg-purple/5");
-        }
-      });
+  const serviceFaqs = document.querySelectorAll(".service-faq-toggler");
+  window.addEventListener("load", (event) => {
+    serviceFaqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
     });
   });
-}
 
-const h8Faqs = document.querySelectorAll(".h8-faq-toggler");
-window.addEventListener("load", (event) => {
-  h8Faqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (h8Faqs) {
-  h8Faqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      h8Faqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            56 +
-            "px";
-          item.classList.add("bg-blue-sass/5");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("bg-blue-sass/5");
-        }
+  if (serviceFaqs) {
+    serviceFaqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        serviceFaqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              56 +
+              "px";
+            item.classList.add("bg-purple/5");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("bg-purple/5");
+          }
+        });
       });
     });
-  });
-}
+  }
 
-const h9Faqs = document.querySelectorAll(".h9-faq-toggler");
-window.addEventListener("load", (event) => {
-  h9Faqs.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.height = item.children[0].clientHeight + 40 + "px";
-    }
-  });
-});
-
-if (h9Faqs) {
-  h9Faqs.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      h9Faqs.forEach((faq) => {
-        if (e.target.getAttribute("name") === faq.getAttribute("name")) {
-          item.style.height =
-            item.children[0].clientHeight +
-            item.children[1].clientHeight +
-            56 +
-            "px";
-          item.classList.add("bg-app-main");
-        } else {
-          faq.style.height = faq.children[0].clientHeight + 40 + "px";
-          faq.classList.remove("bg-app-main");
-        }
-      });
+  const h6Faqs = document.querySelectorAll(".h6-faq-toggler");
+  window.addEventListener("load", (event) => {
+    h6Faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
     });
   });
+
+  if (h6Faqs) {
+    h6Faqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        h6Faqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              56 +
+              "px";
+            item.classList.add("bg-orange/10");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("bg-orange/10");
+          }
+        });
+      });
+    });
+  }
+
+  const faqs2 = document.querySelectorAll(".faq-toggler-2");
+  window.addEventListener("load", (event) => {
+    faqs2.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
+    });
+  });
+
+  if (faqs2) {
+    faqs2.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        faqs2.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              56 +
+              "px";
+            item.classList.add("bg-purple/5");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("bg-purple/5");
+          }
+        });
+      });
+    });
+  }
+
+  const h8Faqs = document.querySelectorAll(".h8-faq-toggler");
+  window.addEventListener("load", (event) => {
+    h8Faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
+    });
+  });
+
+  if (h8Faqs) {
+    h8Faqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        h8Faqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              56 +
+              "px";
+            item.classList.add("bg-blue-sass/5");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("bg-blue-sass/5");
+          }
+        });
+      });
+    });
+  }
+
+  const h9Faqs = document.querySelectorAll(".h9-faq-toggler");
+  window.addEventListener("load", (event) => {
+    h9Faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.style.height = item.children[0].clientHeight + 40 + "px";
+      }
+    });
+  });
+
+  if (h9Faqs) {
+    h9Faqs.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        h9Faqs.forEach((faq) => {
+          if (e.target.getAttribute("name") === faq.getAttribute("name")) {
+            item.style.height =
+              item.children[0].clientHeight +
+              item.children[1].clientHeight +
+              56 +
+              "px";
+            item.classList.add("bg-app-main");
+          } else {
+            faq.style.height = faq.children[0].clientHeight + 40 + "px";
+            faq.classList.remove("bg-app-main");
+          }
+        });
+      });
+    });
+  }
 }
 
 const partnerSwiper = document.getElementsByClassName("partnerSwiper");
