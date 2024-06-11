@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet, RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet, RouterModule, Router } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -41,6 +41,7 @@ declare function mouseMoveParallax(selectorId: string): void;
 export class AppComponent implements OnInit {
 
   constructor(
+    private router: Router
   ) { }
 
   ngOnInit(): void {
